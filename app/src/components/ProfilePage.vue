@@ -1,7 +1,7 @@
 <template>
     <div>
-        <NavBar></NavBar>
-        <UserCard></UserCard>
+
+        <UserCard msg="UserPage User Info"></UserCard>
     </div>
     <div>
         <!-- Loop through user-created scrolls here -->
@@ -10,13 +10,13 @@
 </template>
 
 <script>
-import NavBar from "./NavBar.vue";
+
 import UserCard from "./UserCard.vue";
 import ScrollCard from "./ScrollCard.vue";
 export default {
     name: 'ProfilePage',
     components: {
-        NavBar,
+
         UserCard,
         ScrollCard
     },

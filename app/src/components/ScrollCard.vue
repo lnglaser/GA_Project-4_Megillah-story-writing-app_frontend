@@ -8,6 +8,7 @@
         </div>
         <div class="button-wrapper">
             <button>Edit</button>
+            <button>Add Chapter</button>
             <button>Delete</button>
         </div>
 

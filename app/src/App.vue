@@ -1,8 +1,9 @@
 <template>
   <div id=app>
-    <NavBar></NavBar>
-    <ScrollCard msg="ScrollCard Test"></ScrollCard>
-    <ChapterCard msg="ChapterCard Test"></ChapterCard>
+    <NavBar />
+    <router-view></router-view>
+    <!-- <ScrollCard msg="ScrollCard Test"></ScrollCard>
+    <ChapterCard msg="ChapterCard Test"></ChapterCard> -->
   </div>
   <!-- <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App" /> -->
@@ -12,8 +13,8 @@
 // import HelloWorld from './components/HelloWorld.vue'
 // import axios from 'axios';
 import NavBar from './components/NavBar.vue';
-import ScrollCard from './components/ScrollCard.vue'
-import ChapterCard from './components/ChapterCard.vue';
+// import ScrollCard from './components/ScrollCard.vue'
+// import ChapterCard from './components/ChapterCard.vue';
 
 
 export default {
@@ -21,8 +22,8 @@ export default {
   components: {
     // HelloWorld,
     NavBar,
-    ScrollCard,
-    ChapterCard,
+    // ScrollCard,
+    // ChapterCard,
   },
   data: () => ({
     chapters: null,

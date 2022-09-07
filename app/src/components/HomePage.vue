@@ -6,19 +6,19 @@
 </template>
 
 <script>
+// import axios from 'axios'
+// import { BASE_URL } from '../globals'
+import ScrollCard from '../components/ScrollCard.vue'
+
 export default {
     name: "HomePage",
     components: { ScrollCard },
     methods: {
-        navigateItem() {
-            this.$router.push('/')
-        }
+
     }
 }
 
-// import axios from 'axios'
-// import { BASE_URL } from '../globals'
-import ScrollCard from '../components/ScrollCard.vue'
+
 
 </script>
 

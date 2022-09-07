@@ -4,6 +4,8 @@ import ProfilePage from "./components/ProfilePage.vue";
 import ScrollPage from "./components/ScrollPage.vue";
 import BrowseScrolls from "./components/BrowseScrolls.vue";
 
+// const HomePage = { template: "<div>Home</div>" };
+
 const routes = [
   {
     path: "/",
