@@ -1,7 +1,7 @@
 <template>
+    <h1>Here's a Nav Bar</h1>
     <nav>
-        <h1>Here's a Nav Bar</h1>
-        <form><input type="text" /></form>
+        <form><input type="text" placeholder="Search scrolls" /></form>
         <router-link to="/" name="HomePage">Home</router-link>
         <router-link to="/browse" name="Browse">Browse</router-link>
         <router-link to="/profile" name="Profile">Profile</router-link>
@@ -20,6 +20,11 @@ export default {
 
 
 <style>
+nav {
+    display: flex;
+    align-items: center;
+}
+
 router-link {
     padding: 1em;
 }

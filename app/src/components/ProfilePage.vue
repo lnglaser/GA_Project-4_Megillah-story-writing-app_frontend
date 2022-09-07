@@ -8,9 +8,11 @@
             <ScrollCard msg="UserPage scroll test" :result="result.title"></ScrollCard>
         </div>
     </div>
-    <form class="new-scroll-form">
-        <textarea rows="6" cols="10" placeholder="Title" />
-        <textarea rows="10" cols="50" placeholder="Story text" />
+    <form class="new-scroll-form" @submit="newScroll">
+        <h2>Start a new scroll</h2>
+        <textarea rows="6" cols="10" placeholder="Title" value="title" />
+        <textarea rows="10" cols="50" placeholder="Story text" value="body" />
+        <input type="submit" />
     </form>
 </template>
 
@@ -41,8 +43,11 @@ export default {
         }
     },
     methods: {
-        navigateItem() {
-            this.$router.push('/profile')
+        newScroll(e) {
+            e.preventDefault()
+            alert('New scroll created')
+            this.title = ''
+            this.body = ''
         }
     }
 }
@@ -50,4 +55,5 @@ export default {
 </script>
 
 <style>
+new-scroll-form {}
 </style>
