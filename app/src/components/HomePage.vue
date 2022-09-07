@@ -1,7 +1,7 @@
 <template>
     <h1>Here's the home page</h1>
-    <div>
-        <ScrollCard msg="HomePage scroll test"></ScrollCard>
+    <div class="scroll-browser" :key="index" v-for="(result,index) in scrolls">
+        <ScrollCard msg="HomePage scroll test" :result="result.title"></ScrollCard>
     </div>
 </template>
 
@@ -23,6 +23,7 @@ export default {
         try {
             const res = await axios.get(`${BASE_URL}/scrolls`)
             this.scrolls = res.data
+            console.log(res.data)
         } catch (error) {
             console.log(error)
         }
