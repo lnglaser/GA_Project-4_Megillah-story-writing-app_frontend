@@ -3,8 +3,8 @@
     <div class="chapter-card">
         <h3>{{ msg }}</h3>
         <div class="text-wrapper">
-            <h3>{{ heading }}</h3>
-            <div>{{ chapter }}</div>
+            <h3>{{ chapter }}</h3>
+            <!-- <div>{{ chapter }}</div> -->
 
         </div>
         <div class="button-wrapper">
@@ -22,10 +22,10 @@ export default {
         msg: String,
         chapter: {}
     },
-    data: () => ({
-        chapters: null,
-        heading: 'This should be a chapter'
-    }),
+    // data: () => ({
+    //     chapters: null,
+    //     heading: 'This should be a chapter'
+    // }),
     methods: {}
 }
 </script>

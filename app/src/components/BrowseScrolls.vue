@@ -1,5 +1,7 @@
 <!-- This page will show all scrolls -->
-<template></template>
+<template>
+    <div></div>
+</template>
 
 <script></script>
 

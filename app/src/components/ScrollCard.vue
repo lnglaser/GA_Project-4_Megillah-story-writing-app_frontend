@@ -1,9 +1,9 @@
 <template>
-    <div class="scroll-card">
+    <div class="scroll-card" @click="displayScroll(scroll.id)">
         <h3>{{ msg }}</h3>
         <div class="text-wrapper">
-            <h3>{{ heading }}</h3>
-            <div>{{ chapter }}</div>
+            <h3>{{ result }}</h3>
+            <!-- <div>{{ scrollBody }}</div> -->
 
         </div>
         <div class="button-wrapper">
@@ -19,12 +19,18 @@ export default {
     name: 'ScrollCard',
     props: {
         msg: String,
-        scroll: {}
+        result: {}
     },
-    data: () => ({
-        scrolls: null,
-        heading: "This should be a scroll"
-    })
+    // data: () => ({
+    //     scrollBody: '',
+    //     scrollTitle: '',
+    //     heading: "This should be a scroll"
+    // })
+    methods: {
+        displayScroll(id) {
+            this.$router.push(`/scroll/${id}`)
+        }
+    }
 }
 </script>
 

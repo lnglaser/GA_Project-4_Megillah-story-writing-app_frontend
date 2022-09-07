@@ -8,10 +8,16 @@
 <script>
 export default {
     name: "HomePage",
-    components: { ScrollCard }
+    components: { ScrollCard },
+    methods: {
+        navigateItem() {
+            this.$router.push('/')
+        }
+    }
 }
-import axios from 'axios'
-import { BASE_URL } from '../globals'
+
+// import axios from 'axios'
+// import { BASE_URL } from '../globals'
 import ScrollCard from '../components/ScrollCard.vue'
 
 </script>

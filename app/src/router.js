@@ -2,7 +2,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import HomePage from "./components/HomePage.vue";
 import ProfilePage from "./components/ProfilePage.vue";
 import ScrollPage from "./components/ScrollPage.vue";
-import Browse from "./components/Browse.vue";
+import BrowseScrolls from "./components/BrowseScrolls.vue";
 
 const routes = [
   {
@@ -22,8 +22,8 @@ const routes = [
   },
   {
     path: "/browse",
-    component: Browse,
-    name: "Browse",
+    component: BrowseScrolls,
+    name: "BrowseScrolls",
   },
 ];
 

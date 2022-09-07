@@ -2,9 +2,7 @@
   <div id=app>
     <NavBar></NavBar>
     <ScrollCard msg="ScrollCard Test"></ScrollCard>
-    <ChapterCard msg="ChapterCard Test">
-
-    </ChapterCard>
+    <ChapterCard msg="ChapterCard Test"></ChapterCard>
   </div>
   <!-- <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App" /> -->
@@ -33,7 +31,8 @@ export default {
   methods: {
     showChapters() {
       this.chapters = "test chapter state"
-    }
+    },
+
   }
 }
 </script>
