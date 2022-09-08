@@ -1,7 +1,9 @@
 <!-- This page will show all scrolls -->
 <template>
     <div>
-        <ScrollCard></ScrollCard>
+        <div class="scroll-browser" :key="index" v-for="(result,index) in scrolls">
+            <ScrollCard msg="UserPage scroll test" :result="result"></ScrollCard>
+        </div>
         <ChapterCard></ChapterCard>
 
 

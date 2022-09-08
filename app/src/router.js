@@ -32,6 +32,7 @@ const routes = [
     path: "/scrolls/users/7/scrolls/:scroll_id",
     component: EditScrollPage,
     name: "EditScrollPage",
+    props: true,
   },
 ];
 

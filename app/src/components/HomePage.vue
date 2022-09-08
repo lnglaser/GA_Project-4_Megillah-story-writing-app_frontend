@@ -1,7 +1,7 @@
 <template>
     <h1>Here's the home page</h1>
     <div class="scroll-browser" :key="index" v-for="(result,index) in scrolls">
-        <ScrollCard msg="HomePage scroll test" :result="result.title"></ScrollCard>
+        <ScrollCard msg="HomePage scroll test" :result="result"></ScrollCard>
     </div>
 </template>
 
