@@ -8,10 +8,11 @@
             <ScrollCard msg="UserPage scroll test" :result="result.title"></ScrollCard>
         </div>
     </div>
-    <form class="new-scroll-form" @submit="newScroll">
+    <form class="new-scroll-form" @submit="addScroll">
         <h2>Start a new scroll</h2>
-        <textarea rows="6" cols="10" placeholder="Title" value="title" />
-        <textarea rows="10" cols="50" placeholder="Story text" value="body" />
+        <textarea :name="scrollTitle" rows="6" cols="10" placeholder="Title" :value="scrollTitle"
+            v-on:input="handleFormChangeTitle" />
+        <textarea rows="10" cols="50" placeholder="Story text" :value="scrollBody" v-on:input="handleFormChangeBody" />
         <input type="submit" />
     </form>
 </template>
@@ -31,6 +32,8 @@ export default {
     data() {
         return {
             scrolls: [],
+            scrollTitle: "",
+            scrollBody: ""
         };
     },
     async created() {
@@ -43,11 +46,28 @@ export default {
         }
     },
     methods: {
-        newScroll(e) {
-            e.preventDefault()
-            alert('New scroll created')
-            this.title = ''
-            this.body = ''
+        handleFormChangeTitle(e) {
+            this[e.target.name] = e.target.value
+            console.log(e.target.value)
+            this.scrollTitle = e.target.value
+
+        },
+        handleFormChangeBody(e) {
+            this[e.target.name] = e.target.value
+            console.log(e.target.value)
+            this.scrollBody = e.target.value
+
+        },
+        async addScroll() {
+            // e.preventDefault()
+            // alert('New scroll created')
+            // this.title = ''
+            // this.body = ''
+            console.log(this.scrollTitle)
+            const res = await axios.post(`${BASE_URL}/scrolls/7/create`, { title: this.scrollTitle, body: this.scrollBody })
+            console.log(res)
+
+
         }
     }
 }
