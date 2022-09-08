@@ -3,6 +3,7 @@ import HomePage from "./components/HomePage.vue";
 import ProfilePage from "./components/ProfilePage.vue";
 import ScrollPage from "./components/ScrollPage.vue";
 import BrowseScrolls from "./components/BrowseScrolls.vue";
+import EditScrollPage from "./components/EditScrollPage";
 
 // const HomePage = { template: "<div>Home</div>" };
 
@@ -26,6 +27,11 @@ const routes = [
     path: "/browse",
     component: BrowseScrolls,
     name: "BrowseScrolls",
+  },
+  {
+    path: "/scrolls/users/7/scrolls/:scroll_id",
+    component: EditScrollPage,
+    name: "EditScrollPage",
   },
 ];
 

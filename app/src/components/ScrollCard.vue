@@ -7,7 +7,8 @@
 
         </div>
         <div class="button-wrapper">
-            <button>Edit</button>
+            <button @click="$router.push(`/scrolls/users/7/scrolls/${id}`)">Edit</button>
+            <!-- <router-link to="/scrolls/users/7/scrolls/:scroll_id">Edit</router-link> -->
             <button>Add Chapter</button>
             <button>Delete</button>
         </div>
@@ -30,6 +31,7 @@ export default {
     methods: {
         displayScroll(id) {
             this.$router.push(`/scroll/${id}`)
+
         }
     }
 }
