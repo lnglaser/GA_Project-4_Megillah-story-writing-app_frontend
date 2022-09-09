@@ -4,7 +4,7 @@
         <div class="scroll-browser" :key="index" v-for="(result,index) in scrolls">
             <ScrollCard msg="UserPage scroll test" :result="result"></ScrollCard>
         </div>
-        <ChapterCard></ChapterCard>
+
 
 
     </div>
@@ -14,7 +14,7 @@
 import axios from 'axios'
 import { BASE_URL } from '../globals'
 import ScrollCard from '../components/ScrollCard.vue'
-import ChapterCard from './ChapterCard.vue'
+
 
 
 
@@ -22,7 +22,7 @@ export default {
     name: "BrowseScrolls",
     components: {
         ScrollCard,
-        ChapterCard,
+
 
     },
     async created() {

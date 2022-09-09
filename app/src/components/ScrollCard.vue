@@ -1,5 +1,5 @@
 <template>
-    <div class="scroll-card" @click="displayScroll(scroll.id)">
+    <div class="scroll-card">
         <h3>{{ msg }}</h3>
         <div class="text-wrapper">
 
@@ -13,13 +13,17 @@
                 :title="result.title" :id="result.id">Edit</button>
             <!-- <router-link to="/scrolls/users/7/scrolls/:scroll_id">Edit</router-link> -->
             <button>Add Chapter</button>
-            <button>Delete</button>
+            <button @click="$router.push(`/scrolls/users/7/scrolls/delete/${result.id}`)" :body="result.body"
+                :title="result.title" :id="result.id">Delete</button>
         </div>
 
     </div>
 </template>
 
 <script>
+
+// import axios from 'axios';
+// import { BASE_URL } from '@/globals';
 export default {
     name: 'ScrollCard',
     props: {
@@ -32,10 +36,10 @@ export default {
     //     heading: "This should be a scroll"
     // })
     methods: {
-        displayScroll(id) {
-            this.$router.push(`/scroll/${id}`)
 
-        }
+        // deleteScroll(id) {
+        //     axios.delete(`${BASE_URL}/users/7/scrolls/${result.id}`)
+        // }
     }
 }
 </script>

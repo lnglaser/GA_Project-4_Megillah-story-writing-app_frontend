@@ -5,14 +5,16 @@
         </ScrollCard> -->
     </div>
     <div>
-        <form class="new-scroll-form" @submit.prevent="editScroll">
+        <p> Are you sure you want to delete this?</p>
+        <!-- <form class="new-scroll-form" @submit.prevent="editScroll">
             <h2>Edit Scroll</h2>
             <textarea :name="scrollTitle" rows="6" cols="10" placeholder="Title" :value="scrollTitle"
                 v-on:input="handleFormChangeTitle" />
             <textarea rows="10" cols="50" placeholder="Story text" :value="scrollBody"
                 v-on:input="handleFormChangeBody" />
             <input type="submit" />
-        </form>
+        </form> -->
+        <button @click="deleteScroll()">Confirm Delete</button>
     </div>
 </template>
 
@@ -23,7 +25,7 @@ import { BASE_URL } from '@/globals';
 // import ScrollCard from '../components/ScrollCard.vue'
 
 export default {
-    name: "EditScrollPage",
+    name: "DeleteScrollPage",
     // components: { ScrollCard },
     data() {
         return {
@@ -54,21 +56,22 @@ export default {
     //     }
     // },
     methods: {
-        handleFormChangeTitle(e) {
-            this[e.target.name] = e.target.value;
-            console.log(e.target.value);
-            this.scrollTitle = e.target.value;
-        },
-        handleFormChangeBody(e) {
-            this[e.target.name] = e.target.value;
-            console.log(e.target.value);
-            this.scrollBody = e.target.value;
-        },
-        async editScroll() {
+        // handleFormChangeTitle(e) {
+        //     this[e.target.name] = e.target.value;
+        //     console.log(e.target.value);
+        //     this.scrollTitle = e.target.value;
+        // },
+        // handleFormChangeBody(e) {
+        //     this[e.target.name] = e.target.value;
+        //     console.log(e.target.value);
+        //     this.scrollBody = e.target.value;
+        // },
+        async deleteScroll() {
             console.log(this.scrollTitle);
             console.log(this.scrollBody);
+            console.log(this.$route.params.scroll_id)
 
-            const res = await axios.put(`${BASE_URL}/scrolls/users/7/scrolls/${this.$route.params.scroll_id}`, { title: this.scrollTitle, body: this.scrollBody })
+            const res = await axios.delete(`${BASE_URL}/scrolls/users/7/scrolls/${this.$route.params.scroll_id}`, { title: this.scrollTitle, body: this.scrollBody })
             console.log(res)
         }
     },
