@@ -1,5 +1,5 @@
 <template>
-    <h1>Here's a Nav Bar</h1>
+    <h1>Megillah</h1>
     <nav>
         <form><input type="text" placeholder="Search scrolls" /></form>
         <router-link to="/" name="HomePage">Home</router-link>

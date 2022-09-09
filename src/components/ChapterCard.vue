@@ -31,4 +31,8 @@ export default {
 </script>
 
 <style>
+chapter-card {
+    border: solid 2px black;
+    border-radius: 5px;
+}
 </style>
