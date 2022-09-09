@@ -21,9 +21,7 @@ import ScrollCard from '../components/ScrollCard.vue'
 export default {
     name: "BrowseScrolls",
     components: {
-        ScrollCard,
-
-
+        ScrollCard
     },
     async created() {
         try {

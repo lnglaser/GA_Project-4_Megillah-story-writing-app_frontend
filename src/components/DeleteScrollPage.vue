@@ -14,7 +14,7 @@
                 v-on:input="handleFormChangeBody" />
             <input type="submit" />
         </form> -->
-        <button @click="deleteScroll()">Confirm Delete</button>
+        <button @click="deleteScroll">Confirm Delete</button>
     </div>
 </template>
 
