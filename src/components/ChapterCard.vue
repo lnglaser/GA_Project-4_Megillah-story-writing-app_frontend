@@ -3,7 +3,7 @@
     <div class="chapter-card">
         <h3>{{ msg }}</h3>
         <div class="text-wrapper">
-            <h3>{{ chapter }}</h3>
+            <h3>{{ result.body }}</h3>
             <!-- <div>{{ chapter }}</div> -->
 
         </div>
@@ -20,7 +20,7 @@ export default {
     name: 'ChapterCard',
     props: {
         msg: String,
-        chapter: {}
+        result: {}
     },
     // data: () => ({
     //     chapters: null,

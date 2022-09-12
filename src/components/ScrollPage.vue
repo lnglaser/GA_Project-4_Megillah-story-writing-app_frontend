@@ -2,26 +2,32 @@
 <template>
     <div>
         <!-- Show selected scroll content, and loop through chapter cards -->
-        <ScrollCard :result="result"></ScrollCard>
-        <ChapterCard></ChapterCard>
+        <!-- <ScrollCard msg="ScrollPage scroll test" :result="result"></ScrollCard> -->
+        <div class="chapter-browser" :key="index" v-for="(result,index) in chapters">
+            <ChapterCard msg="ScrollPage chapter test" :result="result"></ChapterCard>
+        </div>
     </div>
 </template>
 
 <script>
 import axios from 'axios'
 import { BASE_URL } from '../globals'
-import ScrollCard from "./ScrollCard.vue";
+// import ScrollCard from "./ScrollCard.vue";
 import ChapterCard from "./ChapterCard.vue";
 
 
 export default {
     name: "ScrollPage",
-    components: { ScrollCard, ChapterCard },
-
+    components: { ChapterCard },
+    data() {
+        return {
+            chapters: [],
+        };
+    },
     async created() {
         try {
             const res = await axios.get(`${BASE_URL}/chapters/scrolls/${this.$route.params.scroll_id}`)
-            this.scrolls = res.data
+            this.chapters = res.data
             console.log(res.data)
         } catch (error) {
             console.log(error)
