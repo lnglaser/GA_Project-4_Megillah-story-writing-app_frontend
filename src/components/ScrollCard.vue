@@ -12,7 +12,7 @@
             <button @click="$router.push(`/scrolls/users/7/scrolls/${result.id}`)" :body="result.body"
                 :title="result.title" :id="result.id">Edit</button>
             <!-- <router-link to="/scrolls/users/7/scrolls/:scroll_id">Edit</router-link> -->
-            <button>Add Chapter</button>
+            <button>View chapters</button>
             <button @click="$router.push(`/scrolls/users/7/scrolls/delete/${result.id}`)" :body="result.body"
                 :title="result.title" :id="result.id">Delete</button>
         </div>
@@ -45,4 +45,5 @@ export default {
 </script>
 
 <style>
+
 </style>
