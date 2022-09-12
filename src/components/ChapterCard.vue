@@ -3,7 +3,8 @@
     <div class="chapter-card">
         <h3>{{ msg }}</h3>
         <div class="text-wrapper">
-            <h3>{{ result.body }}</h3>
+            <h3>{{ result.scrollId }}</h3>
+            <p>{{ result.body }}</p>
             <!-- <div>{{ chapter }}</div> -->
 
         </div>
