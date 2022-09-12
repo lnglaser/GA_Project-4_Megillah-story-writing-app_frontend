@@ -12,8 +12,8 @@
             <button @click="$router.push(`/scrolls/users/7/scrolls/${result.id}`)" :body="result.body"
                 :title="result.title" :id="result.id">Edit</button>
             <!-- <router-link to="/scrolls/users/7/scrolls/:scroll_id">Edit</router-link> -->
-            <button>View chapters</button>
-            <button @click="$router.push(`/scrolls/users/7/scrolls/delete/${result.id}`)" :body="result.body"
+            <button @click="$router.push(`/scrolls/${result.id}`)" :id="result.id">View chapters</button>
+            <button @click=" $router.push(`/scrolls/users/7/scrolls/delete/${result.id}`)" :body="result.body"
                 :title="result.title" :id="result.id">Delete</button>
         </div>
 

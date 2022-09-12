@@ -20,9 +20,10 @@ const routes = [
     name: "ProfilePage",
   },
   {
-    path: "/scroll/:scroll_id",
+    path: "/scrolls/:scroll_id",
     component: ScrollPage,
     name: "ScrollPage",
+    props: true,
   },
   {
     path: "/browse",
