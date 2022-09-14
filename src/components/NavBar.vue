@@ -41,7 +41,13 @@ button {
     padding: 15px 30px;
 }
 
-router-link {
+a {
     padding: 1em;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+text-wrapper {
+    border: solid black 2px;
 }
 </style>

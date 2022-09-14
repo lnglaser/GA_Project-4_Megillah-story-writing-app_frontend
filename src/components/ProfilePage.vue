@@ -75,7 +75,5 @@ export default {
 </script>
 
 <style>
-new-scroll-form {
-    border: solid black 2px;
-}
+new-scroll-form {}
 </style>
