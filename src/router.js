@@ -51,7 +51,7 @@ const routes = [
     props: true,
   },
   {
-    path: "/chapters/users/7/chapters/:scroll_id/delete",
+    path: "/chapters/users/7/chapters/:chapter_id/delete",
     component: DeleteChapterPage,
     name: "DeleteChapterPage",
     props: true,

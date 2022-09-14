@@ -37,7 +37,8 @@ input {
 
 button {
     background-color: black;
-    color: white
+    color: white;
+    padding: 15px 30px;
 }
 
 router-link {
