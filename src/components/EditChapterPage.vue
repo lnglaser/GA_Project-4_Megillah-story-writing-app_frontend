@@ -62,7 +62,7 @@ export default {
 
             console.log(this.chapterBody);
 
-            const res = await axios.put(`${BASE_URL}/chapters/users/7/chapters/${this.$route.params.scroll_id}`, { body: this.chapterBody })
+            const res = await axios.put(`${BASE_URL}/chapters/users/7/chapters/${this.$route.params.chapter_id}`, { body: this.chapterBody })
             console.log(res)
         }
     },
