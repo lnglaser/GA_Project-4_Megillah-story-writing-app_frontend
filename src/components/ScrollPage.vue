@@ -69,5 +69,8 @@ export default {
 </script>
 
 <style>
-
+chapter-browser {
+    border: solid black 2px;
+    border-radius: 5px;
+}
 </style>
