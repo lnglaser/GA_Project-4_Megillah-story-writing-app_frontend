@@ -25,6 +25,16 @@ nav {
     align-items: center;
 }
 
+input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
 router-link {
     padding: 1em;
 }

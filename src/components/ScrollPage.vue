@@ -4,7 +4,7 @@
         <!-- Show selected scroll content, and loop through chapter cards -->
         <!-- <ScrollCard msg="ScrollPage scroll test" :result="result"></ScrollCard> -->
         <div class="chapter-browser" :key="index" v-for="(result,index) in chapters">
-            <ChapterCard msg="ScrollPage chapter test" :result="result"></ChapterCard>
+            <ChapterCard :result="result"></ChapterCard>
         </div>
         <form class="new-chapter-form" @submit="addChapter">
             <h2>Add a chapter</h2>
@@ -73,4 +73,14 @@ chapter-browser {
     border: solid black 2px;
     border-radius: 5px;
 }
+
+/* input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+} */
 </style>

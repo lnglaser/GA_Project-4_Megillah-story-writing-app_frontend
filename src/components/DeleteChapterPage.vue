@@ -29,8 +29,7 @@ export default {
         try {
             const res = await axios.get(`${BASE_URL}/chapters/${this.$route.params.chapter_id}`);
             this.chapter = res.data;
-
-
+            console.log(res.data)
         }
         catch (error) {
             console.log(error);
@@ -42,7 +41,7 @@ export default {
         async deleteChapter() {
             console.log(this.chapterBody);
 
-            const res = await axios.delete(`${BASE_URL}/chapters/users/7/chapters/${this.$route.params.scroll_id}`, { body: this.chapterBody })
+            const res = await axios.delete(`${BASE_URL}/chapters/users/7/chapters/${this.$route.params.chapter_id}`, { body: this.chapterBody })
             console.log(res)
         }
     },

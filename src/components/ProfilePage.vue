@@ -5,7 +5,7 @@
     <div>
         <!-- Loop through user-created scrolls here -->
         <div class="scroll-browser" :key="index" v-for="(result,index) in scrolls">
-            <ScrollCard msg="UserPage scroll test" :result="result"></ScrollCard>
+            <ScrollCard :result="result"></ScrollCard>
         </div>
     </div>
     <form class="new-scroll-form" @submit="addScroll">

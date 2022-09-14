@@ -6,6 +6,7 @@ import BrowseScrolls from "./components/BrowseScrolls.vue";
 import EditScrollPage from "./components/EditScrollPage";
 import EditChapterPage from "./components/EditChapterPage";
 import DeleteScrollPage from "./components/DeleteScrollPage";
+import DeleteChapterPage from "./components/DeleteChapterPage";
 
 // const HomePage = { template: "<div>Home</div>" };
 
@@ -51,8 +52,8 @@ const routes = [
   },
   {
     path: "/chapters/users/7/chapters/:scroll_id/delete",
-    component: DeleteScrollPage,
-    name: "DeleteScrollPage",
+    component: DeleteChapterPage,
+    name: "DeleteChapterPage",
     props: true,
   },
 ];
