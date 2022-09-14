@@ -25,10 +25,7 @@ export default {
         msg: String,
         result: {}
     },
-    // data: () => ({
-    //     chapters: null,
-    //     heading: 'This should be a chapter'
-    // }),
+
     methods: {}
 }
 </script>
