@@ -35,6 +35,11 @@ input {
     box-sizing: border-box;
 }
 
+button {
+    background-color: black;
+    color: white
+}
+
 router-link {
     padding: 1em;
 }
