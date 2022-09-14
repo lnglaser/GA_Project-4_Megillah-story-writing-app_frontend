@@ -49,6 +49,12 @@ const routes = [
     name: "DeleteScrollPage",
     props: true,
   },
+  {
+    path: "/chapters/users/7/chapters/:scroll_id/delete",
+    component: DeleteScrollPage,
+    name: "DeleteScrollPage",
+    props: true,
+  },
 ];
 
 const router = createRouter({
