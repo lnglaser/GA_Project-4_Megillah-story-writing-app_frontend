@@ -11,7 +11,8 @@
         <div class="button-wrapper">
             <button @click="$router.push(`/chapters/${result.id}/edit`)" :body="result.body"
                 :id="result.id">Edit</button>
-            <button>Delete</button>
+            <button @click=" $router.push(`/chapters/users/7/chapters/${result.id}/delete`)" :body="result.body"
+                :id="result.id">Delete</button>
         </div>
 
     </div>
