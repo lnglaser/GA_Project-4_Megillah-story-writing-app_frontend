@@ -9,7 +9,8 @@
 
         </div>
         <div class="button-wrapper">
-            <button>Edit</button>
+            <button @click="$router.push(`/chapters/${result.id}/edit`)" :body="result.body"
+                :id="result.id">Edit</button>
             <button>Delete</button>
         </div>
 

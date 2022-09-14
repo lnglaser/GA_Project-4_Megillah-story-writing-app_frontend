@@ -4,6 +4,7 @@ import ProfilePage from "./components/ProfilePage.vue";
 import ScrollPage from "./components/ScrollPage.vue";
 import BrowseScrolls from "./components/BrowseScrolls.vue";
 import EditScrollPage from "./components/EditScrollPage";
+import EditChapterPage from "./components/EditChapterPage";
 import DeleteScrollPage from "./components/DeleteScrollPage";
 
 // const HomePage = { template: "<div>Home</div>" };
@@ -34,6 +35,12 @@ const routes = [
     path: "/scrolls/users/7/scrolls/:scroll_id",
     component: EditScrollPage,
     name: "EditScrollPage",
+    props: true,
+  },
+  {
+    path: "/chapters/:chapter_id/edit",
+    component: EditChapterPage,
+    name: "EditChapterPage",
     props: true,
   },
   {
