@@ -5,13 +5,11 @@
 [LinkedIn](https://www.linkedin.com/in/leon-glaser-02645322/) | 
 [Twitter](https://twitter.com/sirescapist) |
 [GitHub](https://github.com/lnglaser)
-[GitHub](https://github.com/lnglaser)
 
 ***
 
+![ProjectBanner](imageAssets/aaron-burden-y02jEX_B0O0-unsplash.jpg)
 ### ***Description***
-
-![Writing]
 
 #### **Based on a message board-based writing exercise/game, the aim of this app is to allow a user to open a thread that begins a story, and other people can jump in to continue it. The game is typically played with rules governing who can post and when (i.e. the last person to post must either wait a fixed amount of time, or until another user adds to the story.) Features governing posting permissions will be added during development.**
 
@@ -31,10 +29,10 @@
 1. Build Models
     * User
     * Scroll
-    * Entry
+    * Chapter
 
 2. Define routes
-    * CRUD on Entry
+    * CRUD on Chapter
     * CRUD on Scroll
     * CRUD on User (?)
 
@@ -42,11 +40,13 @@
 ***
 ### ***Screenshots***
 
+..
+
 #### ***ERD***
-![Megillah ERD](https://drive.google.com/file/d/1Ts-Lg6QO3RV4z6ymbBh-KzlRY3j3qdXp/view)
+![MegillahERD](imageAssets/MegillahERD.jpg)
 
 #### ***CHD***
-![Megillah CHD](https://drive.google.com/file/d/1m2FWitOL_njAoRzTOseJAOuTFeMazorm/view)
+![MegillahCHD](imageAssets/MegillahCHD.jpg)
 ***
 ### ***Future Updates***
 - [ ] Implementing frontend user Features
@@ -54,4 +54,4 @@
 - [ ] Restricting adding to thread based on contributor order (previous user must wait until new user adds, or a certain amount of time has passed)
 - [ ] Timing out edit function on entries (edit function will be removed from scrolls/chapters after a certain amount of time)
 - [ ] Allow users extra controls on threads they started (approving chapter additions, setting timers)
-- [ ] 
+- [ ] Styling
